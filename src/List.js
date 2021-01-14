@@ -1,51 +1,60 @@
 import React from 'react';
-
 import {Task} from './Task';
-var name1="hh";
-var reptiles = [];
+var name1="";
+var allItems = [];
 var i=0;
  export class List extends React.Component{
     constructor(props){
         super(props);
-        this.state={data:"",}
+        this.state={data:"",task:[]}
         this.handleClick = this.handleClick.bind(this);
     }
     
-     handleClick(){
-        reptiles.push({id:i,value:name1});
+    handleClick(){
+        if(name1.length===0)
+        {
+            return null;
+        }
+        else{
+        allItems.push({id:i,value:name1});
         i++;
         this.setState({
-            data:name1
-        })
+            task:allItems
+        })}
     }
+
     handleDelete=(itemId)=>{
-    
-        const items = reptiles.filter(item => item.id !== itemId);
-        reptiles=items;
+        const items = allItems.filter(item => item.id !== itemId);
+        allItems=items;
             this.setState({
-                data:name1
-            })
-            
+                task:allItems
+            })  
+    }
+
+    handleEdit=(itemId,newValue)=>{
+        const objIndex = allItems.findIndex((obj => obj.id == itemId));
+        allItems[objIndex].value=newValue;
+        this.setState({
+            task:allItems,
+        });       
 
     }
+    
     render(){
-        var name1="ddsv";
-       ;
+
         return (
-            <div>
+            <div >
                 
-                {reptiles.map((reptile,j) => <Task id={reptile.id} key={'li'+j} taskname={reptile.value} delete={this.handleDelete} />)};
-            <input type="text" className="task" onChange={this.handle.bind(this)}></input>
-            <button onClick={this.handleClick} > add</button>
+              <div className="list1 ">{this.state.task.map((taskN) => <Task id={taskN.id} key={taskN.id} taskname={taskN.value} delete={this.handleDelete} edit={this.handleEdit} save={this.handleSave} ref={taskN.id}/>)}</div>
+               <div className="addDiv">
+                    <input size="40" type="text" className="task" onChange={this.handle.bind(this)}></input>
+                    <button className="success btn" onClick={this.handleClick}  > add</button>
+                
+                </div>
             </div>
         )
     }
     handle(event2){
         name1=(event2.target.value);
-        
-        
-        
-    
    }
- 
 }
