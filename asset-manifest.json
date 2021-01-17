@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/todo-app/static/css/main.75e6933e.chunk.css",
-    "main.js": "/todo-app/static/js/main.a59a9a53.chunk.js",
-    "main.js.map": "/todo-app/static/js/main.a59a9a53.chunk.js.map",
-    "runtime-main.js": "/todo-app/static/js/runtime-main.47ebc317.js",
-    "runtime-main.js.map": "/todo-app/static/js/runtime-main.47ebc317.js.map",
-    "static/js/2.c40ccb01.chunk.js": "/todo-app/static/js/2.c40ccb01.chunk.js",
-    "static/js/2.c40ccb01.chunk.js.map": "/todo-app/static/js/2.c40ccb01.chunk.js.map",
-    "static/js/3.6508f504.chunk.js": "/todo-app/static/js/3.6508f504.chunk.js",
-    "static/js/3.6508f504.chunk.js.map": "/todo-app/static/js/3.6508f504.chunk.js.map",
-    "index.html": "/todo-app/index.html",
-    "static/css/main.75e6933e.chunk.css.map": "/todo-app/static/css/main.75e6933e.chunk.css.map",
-    "static/js/2.c40ccb01.chunk.js.LICENSE.txt": "/todo-app/static/js/2.c40ccb01.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/todo-app/static/media/logo.6ce24c58.svg"
+    "main.css": "/static/css/main.be6b3d26.chunk.css",
+    "main.js": "/static/js/main.80cfa8be.chunk.js",
+    "main.js.map": "/static/js/main.80cfa8be.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9c7043b3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9c7043b3.js.map",
+    "static/js/2.c40ccb01.chunk.js": "/static/js/2.c40ccb01.chunk.js",
+    "static/js/2.c40ccb01.chunk.js.map": "/static/js/2.c40ccb01.chunk.js.map",
+    "static/js/3.6508f504.chunk.js": "/static/js/3.6508f504.chunk.js",
+    "static/js/3.6508f504.chunk.js.map": "/static/js/3.6508f504.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.be6b3d26.chunk.css.map": "/static/css/main.be6b3d26.chunk.css.map",
+    "static/js/2.c40ccb01.chunk.js.LICENSE.txt": "/static/js/2.c40ccb01.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.47ebc317.js",
+    "static/js/runtime-main.9c7043b3.js",
     "static/js/2.c40ccb01.chunk.js",
-    "static/css/main.75e6933e.chunk.css",
-    "static/js/main.a59a9a53.chunk.js"
+    "static/css/main.be6b3d26.chunk.css",
+    "static/js/main.80cfa8be.chunk.js"
   ]
 }
