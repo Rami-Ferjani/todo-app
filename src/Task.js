@@ -29,7 +29,10 @@ var name2="";
         }
         else{
             this.props.edit(this.props.id,name2);
-            this.setState({form2 : false});}
+            this.setState({form2 : false});
+            name2="";
+        }
+            
     }
 
     render(){
